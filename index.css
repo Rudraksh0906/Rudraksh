@@ -1,0 +1,489 @@
+html {
+  margin: 5px;
+  background-image: url("https://blended-html.com/background-images/bi-background-black.png");
+  display: flex;
+  align-items: center;
+  align-content: center;
+  scroll-behavior: smooth;
+}
+.navigation {
+  position: sticky;
+  font-size: x-large;
+  background-color: black;
+  border: radius 20px;
+  width: 100%;
+}
+.nav-left, .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between; /* Separates left & right */
+  align-items: center;
+  width: 100%; /* Full width */
+  background-color: black;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-left a {
+  background-color: #E1306C; /* Instagram Pink */
+}
+.nav-right a {
+  background-color: orange !important; /* Forces all right-side buttons to be orange */
+}
+
+
+.nav-left a:nth-child(2) {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.navigation a:hover {
+  opacity: 0.8;
+    background-color: orangered; /* Button fills with orange */
+    color: black; /* Text changes */
+    box-shadow: 0px 0px 15px orange; /* Glow effect */
+  }
+.body {
+  cursor: pointer;
+  color: orange;
+  display: flex;
+  flex-direction: column; /* Ensures stacking */
+  align-items: center; /* Centers horizontally */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  text-align: center;
+  margin-top: 80px;
+}
+.Hi {
+  text-align: center;
+  display: block;
+  font-size: 3rem;
+  margin: 50px auto;
+  width: fit-content;
+  text-anchor: middle;
+  color: orange;
+}
+.para {
+  animation: infinite;
+  color: orange;
+  font-size: xx-large;
+  text-align: center;
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+}
+
+.box1,.box2,.box3,.box4{
+  display: flex;
+  width: 120px;
+  text-align: center;
+  border: 5px solid orange;
+  padding: 40px;
+  margin: 10px;
+  background-color: black;
+  font-weight: bold;
+  font-size: x-large;
+  border-radius: 20px;
+  font-family: cursive;
+}
+.box1:hover {
+  background-color: orangered;
+}
+.box2:hover {
+  background-color: orangered;
+}
+.box3:hover {
+  background-color: orangered;
+}
+.box4:hover {
+  background-color: orangered;
+}
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: orange;
+}
+
+/* mouse over link */
+a:hover {
+  color: orangered;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+.navigation a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px; /* Makes the buttons round */
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  transition: 0.3s;
+  justify-content: center;}
+
+.navigation a:first-child {
+  background-color: #E1306C; /* Instagram Pink */
+}
+
+.navigation a:hover {
+  opacity: 0.8;
+}
+.fab {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.about,.Age,.degree,.trophy {
+  list-style: none; /* Removes default bullets */
+  font-size: x-large;
+  font-display: center;
+  text-align: 50%;
+}
+
+.about li::before {
+  content: "\f3c5"; /* Font Awesome icon (map-pin as an example) */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: orange; /* Instagram Pink */
+  font-size: 18px;
+  margin-right: 10px;
+}
+.Age li::before {
+  content: "\f2bd"; /* Font Awesome icon (map-pin as an example) */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: orange; /* Instagram Pink */
+  font-size: 18px;
+  margin-right: 10px;
+}
+.degree li::before {
+  content: "\f19c"; /* Font Awesome icon (map-pin as an example) */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: orange; /* Instagram Pink */
+  font-size: 18px;
+  margin-right: 10px;
+}
+.trophy li::before {
+  content: "\f091"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: orange;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.academic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  width: 80%;
+}
+
+.academic-box {
+  background-color: black;
+  color: orange;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px; /* Makes boxes slightly larger */
+  box-shadow: 0px 4px 8px rgba(255, 140, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.academic-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(255, 140, 0, 0.4);
+}
+
+.academic-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.academic-box p {
+  font-size: 1rem;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  color: orange;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.content {
+  text-align: left;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+.Hi, .para {
+  text-align: center;
+  width: 80%;
+}
+.box-container {
+  display: flex;
+  justify-content: center; /* Centers all boxes horizontally */
+  align-items: center; /* Ensures vertical alignment */
+  gap: 20px; /* Adds spacing between boxes */
+  flex-wrap: wrap; /* Prevents overflow issues */
+}
+.profile-container {
+  display: flex;
+  justify-content: space-between; /* Aligns both sections side by side */
+  gap: 40px; /* Spacing */
+  width: 80%;
+  margin: 20px auto;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.skills, .languages {
+  width: 45%; /* Equal width */
+  min-width: 300px; /* Prevents shrinking */
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(to right, #0077b5, #E1306C); /* Gradient effect */
+  border-radius: 10px;
+}
+.experience-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto;
+  width: 80%;
+}
+
+.experience-item {
+  background-color: black;
+  color: orange;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(255, 140, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(255, 140, 0, 0.4);
+}
+
+.experience-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.experience-item p {
+  font-size: 1rem;
+}
+.academic-heading {
+  font-size: 2.5rem;
+  color: orange;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.academic-heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(to right, orange, orangered);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.intro-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: orange;
+  display: inline-block;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+animated-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: orange;
+  display: inline-block;
+  animation: slideFade 1.5s ease-in-out; /* Animation applied */
+}
+
+/* Keyframes for Smooth Animation */
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Starts slightly higher */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Moves smoothly into place */
+  }
+}
+
+.name-highlight {
+  font-size: 3rem;
+  font-weight: bold;
+  color: orange;
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  animation: fadeIn 1.2s ease-in-out;
+  background: none;
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.intro-text {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.name-highlight {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0px 4px 15px rgba(255, 140, 0, 0.5); }
+  100% { box-shadow: 0px 4px 25px rgba(255, 140, 0, 0.8); }
+}
+.contact-container {
+  text-align: center;
+  padding: 40px;
+  background-color: black;
+  color: orange;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between; /* Aligns form and details side by side */
+  align-items: flex-start;
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+}
+
+.contact-details, .contact-form {
+  width: 48%;
+  background-color: rgba(255, 140, 0, 0.2);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(255, 140, 0, 0.2);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: orangered;
+}
